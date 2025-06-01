@@ -43,5 +43,8 @@ button:hover{
     margin: 60px 60px 30px;
     border-radius: 30px;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
