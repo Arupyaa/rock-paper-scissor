@@ -1,14 +1,3 @@
-const display = document.querySelector("#display");
-const button_rock = document.querySelector("#rock");
-const button_paper = document.querySelector("#paper");
-const button_scissor = document.querySelector("#scissor");
-
-display.textContent = "Enter rock,paper or scissor? : ";
-button_rock.addEventListener("click", HumanClicked("rock"));
-button_paper.addEventListener("click", HumanClicked("paper"));
-button_scissor.addEventListener("click", HumanClicked("scissor"));
-
-
 playGame();
 
 
@@ -66,9 +55,8 @@ function playRound(humanChoice, computerChoice,score) {
     }
 }
 
-function HumanClicked(choice)
-{
-
+function getHumanChoice() {
+    return prompt("Enter rock,paper or scissor?: ");
 }
 
 
